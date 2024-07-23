@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilo.css">
+    <title>Desafio Alura</title>
+    <link rel="shortcut icon" href="lock.svg" type="image/x-icon">
+</head>
+<body>
+    <main class="principal">
+        <section class="cabeçalho">
+            <h1 class="titulo">Seja Bem-vindo à nossa ferramenta!</h1>
+        </section>
+        <div class="painel">
+            <div class="alerta">
+                <img class="icone-alerta" src="warning.svg" alt="Imagem de um circulo com um ponto de exclamação">
+                <p> Letras maiúsculas e caracteres especiais não são aceitos.</p>
+            </div>
+            <div class="area-texto">
+                <textarea class="area_texto_principal js-textarea" placeholder="Digite seu texto aqui"></textarea>
+            </div>
+            <div class="botoes">
+                <button class="botao cripto js-encrypt" type="button">
+                    Criptografar
+                </button>
+                <button class="botao descripto js-descrypt" type="button">
+                    Descriptografar
+                </button>
+                <button class="botao limpar js-btn-clear" type="button">
+                    Limpar
+                </button>
+            </div>
+            <br>
+            <br>
+            <footer>
+                <p>Desenvolvido por Cristhyan Lima, como desafio proposto pelo curso da Alura</p>
+                <p>© 2024</p>
+            </footer>
+        </div> 
+    </main>
+
+
+    <aside class="aside">
+        <section class="asidecabeçalho">
+            <div class="aside_display-texto  js-display-text">
+                <div class="asideImagem">
+                    <img src="High quality products 1 1.svg" alt="imagem alura">
+                </div>
+                <div class="asideMensagem">
+                    <h2 class="asideTitulo">Nenhuma mensagem encontrada</h2>
+                    <p class="asideParagrafo asideMensagem">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+            <div class="alert-container" id="alertContainer">
+                <div class="alert-box">
+                    <p id="alertMessage"></p>
+                </div>
+            </div>      
+        </section>
+        <footer>
+            <div class="botoes">
+                <button class="asideCopiar botao copiar js-btn-copy" type="button">
+                    Copiar Mensagem
+                </button>
+            </div>
+        </footer>
+    </aside>
+    <script src="script.js"></script>
+</body>
+</html>

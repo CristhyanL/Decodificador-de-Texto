@@ -1,0 +1,298 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #D8DFE8;
+    padding: 2.2rem 5% 1rem;
+    font-family: 'Inter', sans-serif;
+    
+    display: flex;
+    flex-flow: column;
+    gap: 2.6rem;
+    overflow-y: hidden;
+}
+
+.principal {
+    height: 100%;
+    flex: 1;
+}
+
+/* Estilos do cabeçalho */
+.cabeçalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    font-size: 1.8rem;
+    text-align: center;
+    color:#0A3871;
+}
+
+/* Estilos do Main Content */
+.painel {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+}
+
+.alerta {
+    display: flex;
+    gap: 0.8rem;
+    color: #0A3871;
+    font-size: 1.3rem;
+    padding: 1rem 0rem;
+}
+
+/* Text area */
+.area-texto {
+    border-radius: 1rem;
+    border: 0.2rem solid #0A3871;
+    background-color: white;
+    padding: 1.6rem;
+
+    flex-basis: 37rem;
+}
+
+.area-texto:focus-within {
+    outline: auto;
+}
+
+.area_texto_principal {
+    resize: none;
+    width: 100%;
+    height: 95%;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    color: #0A3871;
+    background-color: white;
+    padding-right: 1rem;
+}
+
+.area_texto_principal::placeholder {
+    color: #0A3871;
+}
+
+.botoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    margin-top: 3.2rem;
+}
+
+.botao {
+    border: none;
+    border-radius: 1rem;
+    padding: 1.8rem 6%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.6rem;
+    flex: 1;
+
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+.cripto, .copiar, .colar {
+    background-color: #0A3871;
+    border:none;
+    color: #D8DFE8;
+}
+
+.cripto:hover {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 0.2rem solid;
+    transform: scale(1.05);
+    box-shadow: 4px 4px 5px #0A3871;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.descripto:hover {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 0.2rem solid;
+    transform: scale(1.05);
+    box-shadow: 4px 4px 5px #0A3871, 4px 4px 4px #0A3871;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.descripto {
+    background-color: #0A3871;
+    border: none;
+    color: #D8DFE8;
+}
+
+.limpar, .colar {
+    background-color: #0A3871;
+    border: none;
+    color: #D8DFE8;
+}
+
+.limpar:hover {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 0.2rem solid;
+    transform: scale(1.05);
+    box-shadow: 4px 4px 5px #0A3871, 4px 4px 4px #0A3871;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+/* Estilos do Aside */
+.aside {
+    display: flex;
+    flex-direction: column;
+}
+
+.asidecabeçalho {
+    margin-top: 3.5rem;
+    border-radius: 1rem;
+    border: .2rem solid #0A3871;
+    background-color: #ffffff;
+    box-shadow:  4px 4px 5px #0A3871;
+    text-align: center;
+    padding-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.aside_display-texto {
+    font-size: 1.8rem;
+    height: 40.9rem;
+    width: 97%;
+}
+
+.asideMensagem {
+    padding: 0rem 5%;
+}
+
+.asideTitulo {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #0A3871;
+}
+
+.asideParagrafo {
+    font-size: 1.6rem;
+    color: #0A3871;
+}
+
+.asideCopiar {
+    width: 100%;
+}
+
+.copiar {
+    border: none;
+    border-radius: 1rem 1rem 0.6rem 0.6rem;
+}
+
+.copiar:hover{
+    background-color: #D8DFE8;
+    border: 0.2rem solid;
+    border-color: #0A3871;
+    color: #0A3871;
+    box-shadow: 4px 4px 5px #0A3871, 4px 4px 4px #0A3871;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+/* Responsividade */
+@media screen and (min-width: 1020px) {
+    body {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        gap: 3.6rem;
+    }
+
+    .titulo {
+        font-size: 2.8rem;
+    }
+
+    .alerta {
+        display: flex;
+        justify-content: center;
+    }
+
+    .aside {
+        width: 34rem;
+    }
+}
+
+footer p {
+    display: flex;
+    color: #0A3871;
+    font-size: 1.3rem;
+    padding: 0.3rem 0rem;
+    justify-content: center;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #D8DFE8;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #0A3871;
+    border-radius: 10px;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.alert-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none; /* Inicialmente escondido */
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    z-index: 9999; /* Para sobrepor outros elementos */
+}
+
+.alert-box {
+    background: #D8DFE8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+    color: #0A3871;
+}
+
+.alert-box p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.alert-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
